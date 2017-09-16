@@ -1,0 +1,45 @@
+
+## Check the number is Prime or Not
+
+num = as.integer(readline(prompt="Enter a number: "))
+
+flag = 0
+# prime numbers are greater than 1
+if(num > 1) {
+  # check for factors
+  flag = 1
+  for(i in 2:(num-1)) {
+    if ((num %% i) == 0) {
+      flag = 0
+      break
+    }
+  }
+} 
+
+if(num == 2)    flag = 1
+if(flag == 1) {
+  print(paste(num,"is a prime number"))
+} else {
+  print(paste(num,"is not a prime number"))
+}
+
+
+
+
+## To know target letters in the words
+
+xyz <- c("above","unit","under")
+
+(grep("a",abc) & grep("u", grep("a", abc, value = TRUE)))
+
+
+## as function
+zzz <- function(abc)
+{(grep("a",abc) & grep("u", grep("a", abc, value = TRUE)))}
+
+zzz(abc)
+
+## To return the words
+
+grep("u", grep("a", abc, value = TRUE), value = TRUE)
+
